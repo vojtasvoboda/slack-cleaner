@@ -1,0 +1,12 @@
+{
+    "name": "vojtasvoboda/slack-delete",
+    "require": {
+        "tracy/tracy": "^2.3"
+    },
+    "authors": [
+        {
+            "name": "Vojta Svoboda",
+            "email": "vojtasvoboda.cz@gmail.com"
+        }
+    ]
+}
