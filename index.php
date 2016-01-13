@@ -32,7 +32,7 @@ for($i = 1; $i < ($deletedCountInOneCall / 10); $i++)
     }
 
     // delete URL
-    $deleteUrl = "https://slack.com/api/chat.delete?token=$token&channel=$channel&pretty=1&ts=";
+    $deleteUrl = "https://slack.com/api/chat.delete?token=$token&channel=$channelName&pretty=1&ts=";
 
     // delete all messages
     foreach ($ts as $t) {
