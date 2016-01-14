@@ -1,6 +1,6 @@
 # Slack cleaner
 
-Used for deleting direct messages from some user or bot. Now it's available only by API.
+Easily delete direct messages from some user or bot.
 
 # How to clean messages
 
@@ -11,4 +11,4 @@ Used for deleting direct messages from some user or bot. Now it's available only
 - copy `token` parameter from generated URL
 - insert token to script as `$token` parameter
 - run `composer install`
-- run script
+- run script by `php -f index.php`

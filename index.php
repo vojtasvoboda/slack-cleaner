@@ -39,7 +39,7 @@ for($i = 1; $i < ($deletedCountInOneCall / 10); $i++)
         $r = file_get_contents($deleteUrl . $t);
     }
 
-    echo "deleted" . sizeof($ts) . " messages" . "<br />";
+    echo "deleted" . sizeof($ts) . " messages" . "\n";
 }
 
 exit("end");
