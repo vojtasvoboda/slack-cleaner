@@ -15,7 +15,7 @@ $token = '<GENERATED-TOKEN>';
 $deletedCountInOneCall = 1000;
 
 // slack can get only 100 last messages in one call
-for($i = 1; $i < ($deletedCountInOneCall / 10); $i++)
+for($i = 1; $i < ($deletedCountInOneCall / 100); $i++)
 {
     // get messages
     $messagesCount = 100;
