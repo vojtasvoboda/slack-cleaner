@@ -17,9 +17,14 @@ $deletedCountInOneCall = 1000;
 // slack can get only 100 last messages in one call
 for($i = 1; $i <= ($deletedCountInOneCall / 100); $i++)
 {
+	// delete messages from channel
+	$messagesUrl = "https://slack.com/api/channels.history?token=$token&channel=$channelName&count=$messagesCount&pretty=1";
+
+	// delete messages from chats
+	// $messagesUrl = "https://slack.com/api/im.history?token=$token&channel=$channelName&count=$messagesCount&pretty=1";
+
     // get messages
     $messagesCount = 100;
-    $messagesUrl = "https://slack.com/api/im.history?token=$token&channel=$channelName&count=$messagesCount&pretty=1";
     $messagesJson = file_get_contents($messagesUrl);
     $messages = json_decode($messagesJson);
 
